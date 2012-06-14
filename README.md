@@ -2,6 +2,10 @@
 
 Simple tools to help you interact with the Weather Underground API.
 
+## Weather Underground API Key
+
+Head to [http://www.wunderground.com/weather/api/](http://www.wunderground.com/weather/api/) and sign up for an API key. Takes 2 minutes.
+
 ## Installing
 
 Available via Sparks. For info about how to install sparks, go here: http://getsparks.org/install
