@@ -10,7 +10,7 @@
  * @email		  brian@twopiers.com
  * 
  * @file		  libraries/weather.php
- * @version		0.0.1
+ * @version		0.0.2
  * @date		  06/12/2012
  */
 
@@ -135,7 +135,7 @@ class weather
   	$logo_color       = $this->_parse_logo_color($options['logo_color']);
   	$logo_orientation = $this->_parse_logo_orientation($options['logo_orientation']);
   	$logo_size        = $this->_parse_logo_size($options['logo_size'],$logo_orientation);
-  	return '<div class="'.$options['logo_div_class'].'"><img src="'.base_url().'sparks/weather/0.0.1/logos/wundergroundLogo_'.$logo_color.$logo_orientation.'_'.$logo_size.'.png" alt="Weather Underground Logo" title="Weather data provided by Weather Underground"></div>';
+  	return '<div class="'.$options['logo_div_class'].'"><img src="'.base_url().'sparks/weather/0.0.2/logos/wundergroundLogo_'.$logo_color.$logo_orientation.'_'.$logo_size.'.png" alt="Weather Underground Logo" title="Weather data provided by Weather Underground"></div>';
 	}
 	// --------------------------------------------------------------------------
 

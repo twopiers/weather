@@ -8,13 +8,13 @@ Available via Sparks. For info about how to install sparks, go here: http://gets
 
 To install via CLI:
 
->     $ php tools/spark install weather
+>     php tools/spark install -v0.0.2 weather
 
 ## Loading
 
 You can then load the spark with this:
 
->     $this->load->spark('weather/0.0.1');
+>     $this->load->spark('weather/0.0.2');
 
 
 ## Usage
@@ -105,7 +105,7 @@ To fetch the logo (and wrapping div):
 >     echo $this->weather->credit();
 
 will return:
->     <div class="seafood"><img src="http://yoursite.com/sparks/weather/0.0.1/logos/wundergroundLogo_blue_horz_medium.png" alt="Weather Underground Logo" title="Weather data provided by Weather Underground"></div>
+>     <div class="seafood"><img src="http://yoursite.com/sparks/weather/0.0.2/logos/wundergroundLogo_blue_horz_medium.png" alt="Weather Underground Logo" title="Weather data provided by Weather Underground"></div>
 
 ---
 #### Author

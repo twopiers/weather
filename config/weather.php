@@ -8,8 +8,8 @@
  * @twitter   twopiers
  * 
  * @file		  autoload.php
- * @version		0.0.1
- * @date		  06/12/2012
+ * @version		0.0.2
+ * @date		  06/18/2012
  */
 
 /*
@@ -21,7 +21,7 @@
 | and sign up for an API key. Takes 2 minutes. Just do it.
 ||
 */
-$config['api_key'] = '77a2839803d1b008';
+$config['api_key'] = 'XXXXXXXXXXXXXXX';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,8 +37,7 @@ $config['api_key'] = '77a2839803d1b008';
 | Australia/Sydney
 | 37.8,-122.4 (latitude,longitude)
 | KJFK (airport code)
-| pws:KCASANFR70 (PWS id - Personal Weather Station ID. To see a full list:
-|   http://www.wunderground.com/weatherstation/ListStations.asp)
+| pws:KCASANFR70 (PWS id - Personal Weather Station ID)
 | autoip (AutoIP address location)
 | autoip.json?geo_ip=38.102.136.138 (Specific IP address location) 
 ||
@@ -52,9 +51,25 @@ $config['default_location'] = 'autoip';
 |--------------------------------------------------------------------------
 |
 | Set the default metric you are looking for. Options are:
-|   weather - returns a friendly string that describes the weather
-|   temp - gives the temp as a number (string)
-| http://www.wunderground.com/weather/api/d/documentation.html#lang
+|   weather - string: something like 'Mostly Cloudy' in the language you designate
+|   temperature_string - string: something like '69.7 F (20.9 C)'
+|   temp - float: one decimal place
+|   relative_humidity - string: will include percent sign
+|   wind_string - string: something like 'Calm' in the language you designate
+|   wind_dir - string: something like 'NNW'
+|   wind_degrees - int: direction of wind, 0-359
+|   dewpoint_string - string: same as temperature\_string, but dewpoint temps
+|   dewpoint - int: dewpoint degrees, no decimal places
+|   heatindex_string - string: same as temperature\_string, but heatindex temps
+|   heatindex - usually a int, but if NA, then a string
+|   windchill_string - string: same as temperature\_string, but windchill temps
+|   windchill - usually a int, but if NA, then a string
+|   wind - string: wind speed with one decimal place
+|   wind_gust - string: wind gust speed with one decimal place
+|   pressure - string: number in milibars or inches, depending on your 'distance_unit' setting
+|   pressure_trend - string: 1 for rising, 0 for stable, -1 for dropping
+|   visibility = string: number in kilometers or miles, depending on your 'distance_unit' setting
+|
 | DEFAULT: temp
 ||
 */
