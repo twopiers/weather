@@ -2,17 +2,21 @@
 
 Simple tools to help you interact with the Weather Underground API.
 
+## Weather Underground API Key
+
+Head to [http://www.wunderground.com/weather/api/](http://www.wunderground.com/weather/api/) and sign up for an API key. Takes 2 minutes.
+
 ## Installing
 
-Available via Sparks. For info about how to install sparks, go here: http://getsparks.org/install
-
-To install via CLI:
-
+<<<<<<< HEAD
 >     php tools/spark install -v0.0.2 weather
+=======
+Available via Sparks. For info about how to install sparks, go here: http://getsparks.org/install
+>>>>>>> 5e0c561707e16446d7f9a6a1aecb3c9b34e66640
 
 ## Loading
 
-You can then load the spark with this:
+You can load the spark with this:
 
 >     $this->load->spark('weather/0.0.2');
 
@@ -22,7 +26,7 @@ First, edit the 'config/weather.php' file to your liking. See the comments in th
 
 There are three basic functions:
 
-###current_conditions
+**current_conditions**
 Basic usage using only values from the config file:
 
 >     echo $this->weather->current_conditions();
@@ -71,7 +75,7 @@ Possible values for 'observation' are:
 + pressure_trend - string: 1 for rising, 0 for stable, -1 for dropping
 + visibility = string: number in kilometers or miles, depending on your 'distance_unit' setting
 
-###current_icon
+**current_icon**
 
 Weather Underground offers 9 sets of weather icons. You can view the sets [here](http://www.wunderground.com/weather/api/d/documentation.html#icons).
 
@@ -89,7 +93,7 @@ will return something like:
 
 current\_icon will automatically determine if the night version of the icon should be displayed.
 
-###credit
+**credit**
 
 Per the Weather Underground Terms of Service, you MUST include a credit somewhere on your page, and that credit MUST include a Weather Underground logo.
 
