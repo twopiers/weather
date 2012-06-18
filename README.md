@@ -8,11 +8,7 @@ Head to [http://www.wunderground.com/weather/api/](http://www.wunderground.com/w
 
 ## Installing
 
-<<<<<<< HEAD
 >     php tools/spark install -v0.0.2 weather
-=======
-Available via Sparks. For info about how to install sparks, go here: http://getsparks.org/install
->>>>>>> 5e0c561707e16446d7f9a6a1aecb3c9b34e66640
 
 ## Loading
 

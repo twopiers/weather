@@ -21,11 +21,7 @@
 | and sign up for an API key. Takes 2 minutes. Just do it.
 ||
 */
-<<<<<<< HEAD
 $config['api_key'] = 'XXXXXXXXXXXXXXX';
-=======
-$config['api_key'] = 'XXXXXXXXXXXXXX';
->>>>>>> 5e0c561707e16446d7f9a6a1aecb3c9b34e66640
 
 /*
 |--------------------------------------------------------------------------
